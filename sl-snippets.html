@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07090F">
+<meta name="description" content="8 ready-to-paste JavaScript snippets for Storyline 360.">
+<title>Storyline Snippets · Madhu Kumar Sikilammetla</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23F2B65A'/%3E%3Ctext x='50' y='68' text-anchor='middle' font-family='Georgia' font-weight='700' font-size='52' fill='%23071226'%3EM%3C/text%3E%3C/svg%3E">
+
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<div class="progress-bar"></div>
+<button class="btt" aria-label="Back to top" title="Back to top">↑</button>
+
+<nav id="site-nav">
+  <a class="nav-logo" href="index.html"><span class="logo-pulse"></span>MK<span class="logo-dot">.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="work.html">Work</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="process.html">Process</a></li>
+    <li><a href="resources.html">Resources</a></li>
+    <li class="has-sub">
+      <button type="button" aria-expanded="false">More ▾</button>
+      <div class="nav-dd">
+        <a href="articles.html">✍️ Articles</a>
+        <a href="id-frameworks.html">🧭 ID Frameworks</a>
+        <a href="id-model-selector.html">🎯 ID Selector</a>
+        <a href="ai-analyzer.html">🤖 AI Analyzer</a>
+        <a href="effort-estimator.html">⏱️ Effort Estimator</a>
+        <a href="lms-demo.html">🎓 LMS Demo</a>
+        <a href="demo-xapi.html">📡 xAPI Demo</a>
+        <a href="demo-storyboard.html">🗂️ Storyboard</a>
+        <a href="demo-template.html">🔧 Template</a>
+        <a href="sl-snippets.html">⚡ JS Snippets</a>
+        <a href="spot-the-bug.html">🐛 Spot the Bug</a>
+        <a href="accessibility-guide.html">♿ A11y Guide</a>
+        <a href="certifications.html">🎓 Certifications</a>
+        <a href="buzz.html">💬 Buzz</a>
+        <a href="case-study-aml.html">📋 Case: AML</a>
+        <a href="case-study-bees.html">🐝 Case: Bees</a>
+        <a href="faq.html">❓ FAQ</a>
+        <a href="glossary.html">📖 Glossary</a>
+        <a href="sitemap.html">🗺️ Sitemap</a>
+      </div>
+    </li>
+  </ul>
+  <div class="nav-actions">
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">☀️</button>
+    <a href="contact.html" class="nav-cta">Let's Talk →</a>
+    <button class="nav-ham" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-menu" aria-hidden="true">
+  <a href="index.html">🏠 Home</a>
+  <a href="about.html">👤 About</a>
+  <a href="work.html">🗂️ Work</a>
+  <a href="services.html">🛠️ Services</a>
+  <a href="process.html">⚙️ Process</a>
+  <a href="resources.html">📦 Resources</a>
+  <a href="articles.html">✍️ Articles</a>
+  <a href="id-frameworks.html">🧭 ID Frameworks</a>
+  <a href="id-model-selector.html">🎯 ID Selector</a>
+  <a href="ai-analyzer.html">🤖 AI Analyzer</a>
+  <a href="effort-estimator.html">⏱️ Effort Estimator</a>
+  <a href="lms-demo.html">🎓 LMS Demo</a>
+  <a href="demo-xapi.html">📡 xAPI Demo</a>
+  <a href="demo-storyboard.html">🗂️ Storyboard</a>
+  <a href="demo-template.html">🔧 Template</a>
+  <a href="sl-snippets.html">⚡ JS Snippets</a>
+  <a href="spot-the-bug.html">🐛 Spot the Bug</a>
+  <a href="accessibility-guide.html">♿ A11y Guide</a>
+  <a href="certifications.html">🎓 Certifications</a>
+  <a href="buzz.html">💬 Buzz</a>
+  <a href="case-study-aml.html">📋 Case: AML</a>
+  <a href="case-study-bees.html">🐝 Case: Bees</a>
+  <a href="faq.html">❓ FAQ</a>
+  <a href="glossary.html">📖 Glossary</a>
+  <a href="sitemap.html">🗺️ Sitemap</a>
+  <a href="contact.html" class="mob-cta">✉️ Contact Me</a>
+</div>
+
+<main id="main">
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow gold reveal">Storyline JS Snippets</span>
+    <h1 class="reveal d1">8 snippets <em>worth bookmarking</em></h1>
+    <p class="reveal d2">Drop-in JavaScript for Articulate Storyline 360 — copy, paste, ship.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid-2">
+      <div class="card reveal">
+      <span class="proj-cat">Snippet · JavaScript</span>
+      <h3 style="margin:.3rem 0 .5rem">Get a Storyline variable</h3>
+      <p style="font-size:.88rem;margin-bottom:1rem">Pull a Storyline variable into JS for any custom logic.</p>
+      <pre class="code" data-lang="js">var player = GetPlayer();
+var name = player.GetVar('UserName');
+console.log('Hi ' + name);</pre>
+    </div>
+<div class="card reveal">
+      <span class="proj-cat">Snippet · JavaScript</span>
+      <h3 style="margin:.3rem 0 .5rem">Set a Storyline variable</h3>
+      <p style="font-size:.88rem;margin-bottom:1rem">Push a value from JS back into a Storyline variable.</p>
+      <pre class="code" data-lang="js">var player = GetPlayer();
+player.SetVar('UserScore', 92);</pre>
+    </div>
+<div class="card reveal">
+      <span class="proj-cat">Snippet · JavaScript</span>
+      <h3 style="margin:.3rem 0 .5rem">Random number</h3>
+      <p style="font-size:.88rem;margin-bottom:1rem">Generate a random integer between min and max.</p>
+      <pre class="code" data-lang="js">function rnd(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+var player = GetPlayer();
+player.SetVar('Dice', rnd(1, 6));</pre>
+    </div>
+<div class="card reveal">
+      <span class="proj-cat">Snippet · JavaScript</span>
+      <h3 style="margin:.3rem 0 .5rem">Trigger a slide jump</h3>
+      <p style="font-size:.88rem;margin-bottom:1rem">Send the learner to a specific slide from JS.</p>
+      <pre class="code" data-lang="js">// Set a Storyline trigger to jump when this var changes
+var player = GetPlayer();
+player.SetVar('GoToSlide', 'Scene1.Slide5');</pre>
+    </div>
+<div class="card reveal">
+      <span class="proj-cat">Snippet · JavaScript</span>
+      <h3 style="margin:.3rem 0 .5rem">Open a PDF in new tab</h3>
+      <p style="font-size:.88rem;margin-bottom:1rem">Open a resource without leaving the course.</p>
+      <pre class="code" data-lang="js">window.open('https://example.com/policy.pdf', '_blank', 'noopener');</pre>
+    </div>
+<div class="card reveal">
+      <span class="proj-cat">Snippet · JavaScript</span>
+      <h3 style="margin:.3rem 0 .5rem">RTL flip on language switch</h3>
+      <p style="font-size:.88rem;margin-bottom:1rem">Toggle right-to-left layout for Arabic/Hebrew learners.</p>
+      <pre class="code" data-lang="js">var lang = GetPlayer().GetVar('Language');
+var dir = (lang === 'ar' || lang === 'he') ? 'rtl' : 'ltr';
+document.documentElement.setAttribute('dir', dir);</pre>
+    </div>
+<div class="card reveal">
+      <span class="proj-cat">Snippet · JavaScript</span>
+      <h3 style="margin:.3rem 0 .5rem">Save progress to localStorage</h3>
+      <p style="font-size:.88rem;margin-bottom:1rem">Persist learner state across sessions without an LMS.</p>
+      <pre class="code" data-lang="js">localStorage.setItem('mk_progress', JSON.stringify({
+  slide: 4,
+  score: 78,
+  ts: Date.now()
+}));</pre>
+    </div>
+<div class="card reveal">
+      <span class="proj-cat">Snippet · JavaScript</span>
+      <h3 style="margin:.3rem 0 .5rem">Send xAPI statement</h3>
+      <p style="font-size:.88rem;margin-bottom:1rem">Fire a custom xAPI statement to your LRS.</p>
+      <pre class="code" data-lang="js">var stmt = {
+  actor: { mbox: 'mailto:learner@example.com' },
+  verb:  { id: 'http://adlnet.gov/expapi/verbs/passed' },
+  object:{ id: 'https://lms.example.com/courses/fire-safety' }
+};
+fetch('https://lrs.example.com/statements', {
+  method: 'POST',
+  headers: { 'Content-Type':'application/json' },
+  body: JSON.stringify(stmt)
+});</pre>
+    </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer id="site-footer">
+  <div class="footer-grid">
+    <div>
+      <a class="nav-logo" href="index.html" style="font-size:1.1rem"><span class="logo-pulse"></span>MK.</a>
+      <p class="foot-tag">Designing learning experiences that move the needle — for healthcare, compliance, and beyond.</p>
+      <div class="socials">
+        <a href="mailto:madhukumar5290@gmail.com" aria-label="Email">✉️</a>
+        <a href="https://github.com/madhukumar5290" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="X">𝕏</a>
+      </div>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="work.html">All Projects</a>
+      <a href="services.html">Services</a>
+      <a href="process.html">My Process</a>
+      <a href="about.html">About</a>
+      <a href="articles.html">Articles</a>
+    </div>
+    <div>
+      <h4>Resources</h4>
+      <a href="id-frameworks.html">ID Frameworks</a>
+      <a href="accessibility-guide.html">Accessibility</a>
+      <a href="effort-estimator.html">Effort Estimator</a>
+      <a href="glossary.html">Glossary</a>
+      <a href="sitemap.html">Sitemap</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="mailto:madhukumar5290@gmail.com">madhukumar5290@gmail.com</a>
+      <a href="contact.html">Project enquiry →</a>
+      <span class="foot-loc">📍 Hyderabad, India · Working worldwide</span>
+      <span class="foot-status"><span class="dot-avail"></span>Available for projects</span>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© <span id="yr"></span> Madhu Kumar Sikilammetla · Designed & built with care.</span>
+    <span>Made with ☕ & care · v2.0</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

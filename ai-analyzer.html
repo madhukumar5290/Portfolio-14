@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07090F">
+<meta name="description" content="Real-time readability analyzer for eLearning scripts and on-screen text.">
+<title>AI Analyzer · Madhu Kumar Sikilammetla</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23F2B65A'/%3E%3Ctext x='50' y='68' text-anchor='middle' font-family='Georgia' font-weight='700' font-size='52' fill='%23071226'%3EM%3C/text%3E%3C/svg%3E">
+
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<div class="progress-bar"></div>
+<button class="btt" aria-label="Back to top" title="Back to top">↑</button>
+
+<nav id="site-nav">
+  <a class="nav-logo" href="index.html"><span class="logo-pulse"></span>MK<span class="logo-dot">.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="work.html">Work</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="process.html">Process</a></li>
+    <li><a href="resources.html">Resources</a></li>
+    <li class="has-sub">
+      <button type="button" aria-expanded="false">More ▾</button>
+      <div class="nav-dd">
+        <a href="articles.html">✍️ Articles</a>
+        <a href="id-frameworks.html">🧭 ID Frameworks</a>
+        <a href="id-model-selector.html">🎯 ID Selector</a>
+        <a href="ai-analyzer.html">🤖 AI Analyzer</a>
+        <a href="effort-estimator.html">⏱️ Effort Estimator</a>
+        <a href="lms-demo.html">🎓 LMS Demo</a>
+        <a href="demo-xapi.html">📡 xAPI Demo</a>
+        <a href="demo-storyboard.html">🗂️ Storyboard</a>
+        <a href="demo-template.html">🔧 Template</a>
+        <a href="sl-snippets.html">⚡ JS Snippets</a>
+        <a href="spot-the-bug.html">🐛 Spot the Bug</a>
+        <a href="accessibility-guide.html">♿ A11y Guide</a>
+        <a href="certifications.html">🎓 Certifications</a>
+        <a href="buzz.html">💬 Buzz</a>
+        <a href="case-study-aml.html">📋 Case: AML</a>
+        <a href="case-study-bees.html">🐝 Case: Bees</a>
+        <a href="faq.html">❓ FAQ</a>
+        <a href="glossary.html">📖 Glossary</a>
+        <a href="sitemap.html">🗺️ Sitemap</a>
+      </div>
+    </li>
+  </ul>
+  <div class="nav-actions">
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">☀️</button>
+    <a href="contact.html" class="nav-cta">Let's Talk →</a>
+    <button class="nav-ham" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-menu" aria-hidden="true">
+  <a href="index.html">🏠 Home</a>
+  <a href="about.html">👤 About</a>
+  <a href="work.html">🗂️ Work</a>
+  <a href="services.html">🛠️ Services</a>
+  <a href="process.html">⚙️ Process</a>
+  <a href="resources.html">📦 Resources</a>
+  <a href="articles.html">✍️ Articles</a>
+  <a href="id-frameworks.html">🧭 ID Frameworks</a>
+  <a href="id-model-selector.html">🎯 ID Selector</a>
+  <a href="ai-analyzer.html">🤖 AI Analyzer</a>
+  <a href="effort-estimator.html">⏱️ Effort Estimator</a>
+  <a href="lms-demo.html">🎓 LMS Demo</a>
+  <a href="demo-xapi.html">📡 xAPI Demo</a>
+  <a href="demo-storyboard.html">🗂️ Storyboard</a>
+  <a href="demo-template.html">🔧 Template</a>
+  <a href="sl-snippets.html">⚡ JS Snippets</a>
+  <a href="spot-the-bug.html">🐛 Spot the Bug</a>
+  <a href="accessibility-guide.html">♿ A11y Guide</a>
+  <a href="certifications.html">🎓 Certifications</a>
+  <a href="buzz.html">💬 Buzz</a>
+  <a href="case-study-aml.html">📋 Case: AML</a>
+  <a href="case-study-bees.html">🐝 Case: Bees</a>
+  <a href="faq.html">❓ FAQ</a>
+  <a href="glossary.html">📖 Glossary</a>
+  <a href="sitemap.html">🗺️ Sitemap</a>
+  <a href="contact.html" class="mob-cta">✉️ Contact Me</a>
+</div>
+
+<main id="main">
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow gold reveal">Readability Analyzer</span>
+    <h1 class="reveal d1">Paste your script. <em>Get a grade.</em></h1>
+    <p class="reveal d2">Real-time Flesch reading ease, grade level, and tips.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="max-width:920px">
+    <div class="grid" style="grid-template-columns:2fr 1fr;gap:1.75rem;align-items:start">
+      <div class="card reveal">
+        <label class="form-label" for="ai-text">Course narration / on-screen text</label>
+        <textarea id="ai-text" class="form-textarea" rows="12" placeholder="Paste a paragraph or full course script here. We'll score readability and suggest a grade level."></textarea>
+        <div class="text-c mt-3"><button id="ai-go" class="btn btn-gold btn-lg">Analyze →</button></div>
+      </div>
+      <div class="card reveal d1">
+        <h3 style="margin-bottom:.85rem;font-size:1.05rem">🎯 What we measure</h3>
+        <ul style="line-height:1.9;font-size:.88rem;color:var(--text2);padding-left:1.25rem">
+          <li>Word & sentence count</li>
+          <li>Average sentence length</li>
+          <li>Flesch Reading Ease (0–100)</li>
+          <li>Flesch–Kincaid Grade Level</li>
+        </ul>
+        <h3 style="margin:1.5rem 0 .65rem;font-size:1.05rem">✓ Target zone</h3>
+        <p style="font-size:.88rem">Workplace eLearning: Flesch <strong>60–80</strong>, grade <strong>7–9</strong>. Patient education: aim for grade <strong>5–6</strong>.</p>
+      </div>
+    </div>
+    <div id="ai-result" class="mt-4"></div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container" style="max-width:820px">
+    <div class="section-head reveal">
+      <span class="eyebrow teal">Tips</span>
+      <h2>How to improve your score</h2>
+    </div>
+    <div class="grid grid-2 reveal">
+      <div class="card"><div class="ico">✂️</div><h3>Shorten sentences</h3><p>Aim for 15–20 words. Break compound sentences. Read aloud — if you run out of breath, it's too long.</p></div>
+      <div class="card"><div class="ico">🔤</div><h3>Swap polysyllables</h3><p>"utilise" → "use". "in order to" → "to". "approximately" → "about".</p></div>
+      <div class="card"><div class="ico">🎯</div><h3>Lead with the verb</h3><p>"You can submit the form by Friday" beats "Submission of the form should be completed by Friday."</p></div>
+      <div class="card"><div class="ico">👤</div><h3>Talk to the learner</h3><p>Use "you" and "we". The conversational register lifts every readability score.</p></div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer id="site-footer">
+  <div class="footer-grid">
+    <div>
+      <a class="nav-logo" href="index.html" style="font-size:1.1rem"><span class="logo-pulse"></span>MK.</a>
+      <p class="foot-tag">Designing learning experiences that move the needle — for healthcare, compliance, and beyond.</p>
+      <div class="socials">
+        <a href="mailto:madhukumar5290@gmail.com" aria-label="Email">✉️</a>
+        <a href="https://github.com/madhukumar5290" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="X">𝕏</a>
+      </div>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="work.html">All Projects</a>
+      <a href="services.html">Services</a>
+      <a href="process.html">My Process</a>
+      <a href="about.html">About</a>
+      <a href="articles.html">Articles</a>
+    </div>
+    <div>
+      <h4>Resources</h4>
+      <a href="id-frameworks.html">ID Frameworks</a>
+      <a href="accessibility-guide.html">Accessibility</a>
+      <a href="effort-estimator.html">Effort Estimator</a>
+      <a href="glossary.html">Glossary</a>
+      <a href="sitemap.html">Sitemap</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="mailto:madhukumar5290@gmail.com">madhukumar5290@gmail.com</a>
+      <a href="contact.html">Project enquiry →</a>
+      <span class="foot-loc">📍 Hyderabad, India · Working worldwide</span>
+      <span class="foot-status"><span class="dot-avail"></span>Available for projects</span>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© <span id="yr"></span> Madhu Kumar Sikilammetla · Designed & built with care.</span>
+    <span>Made with ☕ & care · v2.0</span>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
